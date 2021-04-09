@@ -1,0 +1,92 @@
+.link {
+    color: inherit;
+    text-decoration: none;
+    // font-size: inherit;
+    transition: color .3s ease;
+    width: max-content;
+
+    &__icon {
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+
+        margin-right: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        color: $link-hover-color;
+        transition: $transition-primary;
+    }
+
+    &--secondary {
+        font-family: $font-family-secondary;
+        font-size: $fs-medium;
+
+        .link__icon {
+            color: $c-secondary-0;
+            background-color: $c-third-400;
+        }
+    }
+
+    &--primary {
+        font-family: $font-family-secondary;
+        font-size: $fs-primary;
+        color: $c-link;
+
+        border-bottom: 1px solid inherit;
+    }
+
+    &.link--underline {
+        border-bottom: 1px solid inherit;
+        padding-bottom: 4px;
+    }
+    &.link--underline-dashed {
+        border-style: dashed;
+    }
+}
+
+.link--with-icon {
+    //padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: auto;
+
+    .link__content {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    &-circle {
+
+        .link__icon {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 50%;
+
+            svg {
+                fill: currentColor;
+                width: 45%;
+                height: 45%;
+            }
+        }
+    }
+}
+
+.link--with-icon-border {
+    .link__text {
+        border-bottom: 1px dashed;
+        border-color: inherit;
+    }
+}

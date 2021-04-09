@@ -1,0 +1,40 @@
+.form{
+
+
+  &__inner{
+    margin-top    : 12px;
+    margin-bottom : 12px;
+    padding       : 24px;
+    font-family   : $font-family-secondary;
+    color         : #000;
+  }
+
+  &__label{
+    color : $c-secondary-1000;
+  }
+
+  &--primary{
+
+    .form__inner{
+      max-width        : 350px;
+      background-color : $c-secondary-0;
+
+      box-shadow       : 0px 30px 30px -20px rgba(66, 99, 235, 0.2);
+      border-radius    : $bd-rs-primary;
+    }
+
+  }
+
+  &__submit{
+    width         : 100%;
+    margin-bottom : 12px;
+  }
+
+  &__checkbox{
+    margin-bottom : 24px;
+  }
+
+  &__form-group{
+    margin-bottom : 24px;
+  }
+}

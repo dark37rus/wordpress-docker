@@ -1,0 +1,62 @@
+.single{
+
+  @include media-breakpoint-down(md){
+    padding : 0;
+  }
+
+  &__image{
+    width         : 100%;
+
+    border-radius : $bd-rs-primary;
+    overflow      : hidden;
+  }
+
+
+  &__container{
+    display : grid;
+    gap     : 24px;
+
+    @include media-breakpoint-up(md){
+      grid-template-columns : repeat(2, 1fr);
+      gap                   : 48px;
+    }
+  }
+
+  &__slider{
+    width : 100%;
+  }
+
+  &__column{
+    overflow : hidden;
+
+  }
+
+  &__group-value{
+    display       : flex;
+    align-items   : center;
+    flex-wrap     : wrap;
+    gap           : 24px;
+
+    margin-top    : 36px;
+    margin-bottom : 36px;
+  }
+
+  &__information{
+    &:not(:last-child){
+      margin-bottom : 48px;
+    }
+  }
+
+  &__form{
+    margin-top    : 36px;
+    margin-bottom : 36px;
+  }
+
+}
+
+.slider{
+  &__gallery, &__thumbs{
+    max-height : 600px;
+  }
+}
+

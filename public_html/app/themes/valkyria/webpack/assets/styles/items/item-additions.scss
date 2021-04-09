@@ -1,0 +1,66 @@
+.archive-additions__items{
+  transition : all .3s ease;
+}
+
+.item-additions{
+
+  transition : all .3s ease;
+
+  a{
+    text-decoration : none;
+  }
+
+  &__wrapper{
+    padding          : 20px;
+    background-color : #fff;
+    border-radius    : 8px;
+    border           : 1px solid rgba(0, 0, 0, 0.1);
+    height           : auto;
+    display          : flex;
+    color            : #000;
+
+    @include media-breakpoint-up(md){
+      height : 415px;
+    }
+  }
+
+  &__image{
+    width           : 100%;
+    height          : 120px;
+    object-fit      : cover;
+    border-radius   : 8px;
+    object-position : center;
+  }
+
+  &__link{
+    text-decoration : none;
+    color           : inherit;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    height          : 100%;
+  }
+
+  &__desc{
+    flex-grow     : 1;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+    margin-bottom : 10px;
+    font-size     : 1rem;
+
+    @include media-breakpoint-up(md){
+      font-size : .875rem;
+    }
+  }
+
+  &__title{
+    font-size       : 2rem;
+    font-weight     : bold;
+    margin          : 10px 0;
+    text-decoration : none;
+  }
+
+  &__price{
+    font-size : 1.8em;
+  }
+}

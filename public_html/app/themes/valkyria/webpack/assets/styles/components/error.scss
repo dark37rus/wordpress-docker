@@ -1,0 +1,27 @@
+.error {
+	font-family: $font-family-secondary;
+	font-size: $fs-primary-big;
+
+	color: $c-error;
+
+	position: relative;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&:before {
+		content: '';
+
+		position: relative;
+
+		width: 20px;
+		height: 20px;
+
+		margin-right: 12px;
+
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url(../../ico/error.svg);
+	}
+}

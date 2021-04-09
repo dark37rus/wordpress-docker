@@ -1,0 +1,100 @@
+$section-color-content : $c-secondary-0;
+
+.main-section{
+  position : relative;
+  overflow : hidden;
+
+
+  &__bg{
+    position            : absolute;
+    top                 : 0;
+    right               : 0;
+    left                : 0;
+    bottom              : 0;
+    background-size     : cover;
+    background-position : center;
+  }
+
+  &__container{
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-start;
+    flex-wrap       : wrap;
+
+    height          : 100%;
+    padding-top     : 140px;
+
+    z-index         : 2;
+
+    position        : relative;
+  }
+
+  &__button-group{
+    width          : 100%;
+    padding-top    : 24px;
+    padding-bottom : 24px;
+
+    align-self     : flex-start;
+  }
+
+  &__socials{
+    align-self     : flex-end;
+    width          : 100%;
+    padding-bottom : 50px;
+
+    @include media-breakpoint-up(md){
+      padding-bottom : 200px;
+    }
+  }
+
+  &__title{
+    max-width   : 700px;
+    text-shadow : 0 4px 4px rgba(0, 0, 0, 0.25);
+    align-self  : flex-end;
+    height      : auto;
+    font-size   : 3.5rem !important;
+    color       : $section-color-content;
+
+    @include media-breakpoint-up(md){
+      font-size : 4rem !important;
+    }
+  }
+
+  &__text{
+    width      : 100%;
+    align-self : flex-end;
+
+    > p{
+      width     : 100%;
+      max-width : 280px;
+    }
+
+    color      : $section-color-content;
+  }
+
+  &__link{
+    width          : 100%;
+    padding-top    : 24px;
+    padding-bottom : 24px;
+
+    color          : $section-color-content;
+  }
+
+  &__button-group{
+    color : $section-color-content;
+  }
+
+  &__socials{
+    color : $section-color-content;
+  }
+
+  &__circlet{
+    position : absolute;
+    z-index  : 1;
+    width    : 100%;
+    top      : 70%;
+    left     : 0;
+    right    : 0;
+    bottom   : 0;
+  }
+}

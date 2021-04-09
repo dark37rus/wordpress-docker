@@ -1,0 +1,45 @@
+.social {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: inherit;
+
+  border-radius: 50%;
+  border: 2px solid #fff;
+  fill: #fff;
+
+  &:hover{
+    background-color : #fff;
+    fill: $c-primary-600;
+  }
+
+  svg {
+    width: 70%;
+    fill: inherit;
+
+    path{
+      fill: inherit;
+    }
+  }
+
+
+  &--inherit {
+    border: 2px solid;
+    border-color: inherit;
+
+    svg {
+      width: 50%;
+      height: 50%;
+
+      fill: $link-decoration-color;
+
+      path {
+        fill: inherit;
+      }
+    }
+  }
+}

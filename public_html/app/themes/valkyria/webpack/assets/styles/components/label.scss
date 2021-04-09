@@ -1,0 +1,31 @@
+.label {
+	position: relative;
+
+	&__icon {
+		//width: 20px;
+		//height: 20px;
+	}
+
+	&--with-icon {
+
+
+		.label__icon {
+			position: absolute;
+
+			height: 100%;
+			width: 68px;
+
+			background-size: 18px;
+			background-position: center;
+
+			border-right: 1px solid $c-secondary-400;
+
+			z-index: 1;
+		}
+
+		.label__input {
+			padding-left: 90px;
+			font-size: $fs-small;
+		}
+	}
+}

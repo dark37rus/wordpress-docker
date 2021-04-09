@@ -1,0 +1,17 @@
+.navigation{
+  display     : flex;
+  align-items : flex-start;
+
+  @include media-breakpoint-down(md){
+    width       : 100%;
+  }
+
+  @include media-breakpoint-up(sm){
+    align-items : center;
+
+  }
+
+  &__menu{
+
+  }
+}

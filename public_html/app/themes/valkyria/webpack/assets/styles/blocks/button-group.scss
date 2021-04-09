@@ -1,0 +1,25 @@
+.button-group {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+	}
+
+	.button-group__item {
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+
+			@include media-breakpoint-up(sm) {
+				margin-right: 32px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

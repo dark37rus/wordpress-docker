@@ -1,0 +1,26 @@
+.coupon {
+	color: $c-primary-600;
+
+	margin-top: 36px;
+	margin-bottom: 24px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	&__output {
+		display: inline-block;
+		width: auto;
+
+		cursor: pointer;
+
+		font-family: $font-family-base;
+		font-size: $fs-medium;
+
+		color: $c-secondary-600;
+
+		text-align: center;
+
+		max-width: 228px;
+
+	}
+}

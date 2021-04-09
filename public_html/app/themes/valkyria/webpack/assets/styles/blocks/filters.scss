@@ -1,0 +1,20 @@
+.filters{
+
+  background-color : #fff;
+  padding          : 16px;
+  color            : #000;
+
+  &__title{
+    margin-bottom : 32px;
+  }
+
+
+  &__group{
+    margin-bottom : 30px;
+
+  }
+
+  &__button{
+    margin-top : 32px;
+  }
+}

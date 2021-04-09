@@ -1,0 +1,86 @@
+:root{
+  font-size : 14px;
+
+  @include media-breakpoint-up(md){
+    font-size : 16px;
+  }
+
+  @include media-breakpoint-only(xs){
+    font-size : 12px;
+  }
+}
+
+html{
+  height : 100%;
+}
+
+body{
+  box-sizing               : border-box;
+  line-height              : $line-height-base;
+  font-size                : $font-size-base;
+  font-weight              : $fw-normal;
+  color                    : $fc-text;
+  background-size          : 100%;
+  background-image         : url('../../images/smoke.png');
+  background-position      : center top;
+  -webkit-text-size-adjust : 100%;
+  -webkit-font-smoothing   : antialiased;
+  -moz-osx-font-smoothing  : grayscale;
+  margin                   : 0;
+  min-height               : 100vh;
+  min-height               : -webkit-fill-available;
+  display                  : flex;
+  flex-direction           : column;
+  justify-content          : flex-start;
+  //height: 100%;
+  //height: stretch;
+
+  max-width                : 100vw;
+  overflow-x               : hidden;
+
+  &.stun{
+    overflow : hidden;
+  }
+}
+
+html{
+  position : relative;
+  //scroll-behavior: smooth;
+
+}
+
+main{
+  flex  : 1;
+  width : 100%;
+}
+
+*{
+  box-sizing : border-box;
+}
+
+img{
+  width           : 100%;
+  height          : 100%;
+
+  object-fit      : cover;
+  object-position : top;
+
+  display         : block;
+  border          : none;
+}
+
+.hidden{
+  display : none !important;
+}
+
+::selection{
+  background : $c-primary-600;
+  color      : #fff;
+}
+
+[class*=' single-'] .root,
+[class*=' page-id-']:not(.home) .root,
+[class*=' post-type-archive-'] .root{
+  padding-top       : 115px;
+  background-repeat : no-repeat;
+}

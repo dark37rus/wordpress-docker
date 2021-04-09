@@ -1,0 +1,15 @@
+.filter {
+	display: grid;
+	grid-template-columns: minmax(60px, min-content) 1fr;
+	gap: 16px;
+	align-items: center;
+
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__selections {
+		display: flex;
+	}
+}

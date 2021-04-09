@@ -1,0 +1,16 @@
+.reward {
+	display: flex;
+	align-items: center;
+
+	&__text {
+		margin-right: 18px;
+	}
+
+	&__percent {
+		font-family: $font-family-base;
+		font-weight: $fw-bold;
+		font-size: $fs-medium;
+		line-height: 40px;
+		color: $c-primary-600;
+	}
+}

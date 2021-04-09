@@ -1,0 +1,10 @@
+.breadcrumbs{
+  font-size    : $fs-text-primary;
+  font-family  : $font-family-secondary;
+  color        : $fc-text;
+  padding-left : 0;
+
+  a{
+    text-decoration : none;
+  }
+}

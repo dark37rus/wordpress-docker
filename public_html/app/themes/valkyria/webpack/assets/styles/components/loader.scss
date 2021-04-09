@@ -1,0 +1,23 @@
+.loader {
+	max-width: 830px;
+	height: 8px;
+
+	background-color: $c-secondary-200;
+
+	position: relative;
+
+	&__fill {
+		height: 100%;
+
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 0;
+
+		background-color: $c-primary-600;
+
+		transition-property: width;
+		transition-duration: .3s;
+	}
+}

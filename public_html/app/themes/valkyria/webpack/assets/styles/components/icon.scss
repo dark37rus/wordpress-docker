@@ -1,0 +1,15 @@
+.icon {
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&--copy {
+		background-image: url('../../ico/copy.svg');
+	}
+
+	&--date {
+		background-image: url('../../ico/date.svg');
+	}
+}
+.icon-map{
+	color: $c-primary-600;
+}

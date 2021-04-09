@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Spectral';
+  src: local('Spectral-Regular'),
+       url('../../fonts/Spectral/Spectral-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: $fw-normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: local('Spectral-Bold'),
+       url('../../fonts/Spectral/Spectral-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: $fw-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: local('Spectral-Medium'),
+       url('../../fonts/Spectral/Spectral-Medium.woff2') format('woff2');
+  font-display: swap;
+  font-weight: $fw-medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: local('Spectral-Light'),
+       url('../../fonts/Spectral/Spectral-Light.woff2') format('woff2');
+  font-display: swap;
+  font-weight: $fw-light;
+  font-style: normal;
+}

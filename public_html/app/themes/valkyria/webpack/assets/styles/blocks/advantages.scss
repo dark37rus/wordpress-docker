@@ -1,0 +1,13 @@
+.advantages {
+	width: 100%;
+
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, minmax(auto, 50%));
+	place-content: center;
+
+	@include media-breakpoint-up(md){
+		grid-template-columns: repeat(auto-fill, 230px);
+		gap: 40px;
+	}
+}

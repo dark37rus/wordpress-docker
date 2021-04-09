@@ -1,0 +1,67 @@
+@font-face{
+  font-family  : 'icomoon';
+  src          : url('../../fonts/icomoon.eot?7qs1iv');
+  src          : url('../../fonts/icomoon.eot?7qs1iv#iefix') format('embedded-opentype'),
+  url('../../fonts/icomoon.ttf?7qs1iv') format('truetype'),
+  url('../../fonts/icomoon.woff?7qs1iv') format('woff'),
+  url('../../fonts/icomoon.svg?7qs1iv#icomoon') format('svg');
+  font-weight  : normal;
+  font-style   : normal;
+  font-display : block;
+}
+
+[class^="icon-"], [class*=" icon-"]{
+  font-family             : 'icomoon' !important;
+  speak                   : never;
+  font-style              : normal;
+  font-weight             : normal;
+  font-variant            : normal;
+  font-size               : 1.3em;
+  text-transform          : none;
+  line-height             : 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+}
+.icon_size_small{
+  font-size : 1.5em;
+}
+.icon_size_medium{
+  font-size : 1.5em;
+}
+.icon_size_large{
+  font-size : 2em;
+}
+
+.icon-accord:before{
+  content : "\e900";
+}
+
+.icon-arrow-left:before{
+  content : "\e901";
+}
+
+.icon-arrow-right:before{
+  content : "\e902";
+}
+
+.icon-celendar:before{
+  content : "\e903";
+}
+
+.icon-facebook:before{
+  content : "\e904";
+}
+
+.icon-instagram:before{
+  content : "\e905";
+}
+
+.icon-map:before{
+  content : "\e906";
+}
+
+.icon-whatsapp:before{
+  content : "\e907";
+}

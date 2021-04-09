@@ -1,0 +1,134 @@
+.button{
+  font-style         : normal;
+  font-weight        : 500;
+  box-sizing         : border-box;
+  font-size          : 1rem;
+  box-shadow         : none;
+  border             : 1px solid transparent;
+  border-radius      : 4px;
+  outline            : none;
+  line-height        : 1;
+
+  transition         : $transition-primary;
+  cursor             : pointer;
+
+  display            : flex;
+  justify-content    : center;
+  align-items        : center;
+
+  text-decoration    : none;
+  color              : $button-text-color;
+
+  padding            : 20px 36px;
+
+  -webkit-appearance : none;
+
+
+  &__icon{
+    width           : 24px;
+    height          : 24px;
+
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin-right    : 10px;
+
+
+    svg{
+      width  : 70%;
+      height : 70%;
+
+      fill   : currentColor;
+    }
+  }
+
+  .button--with-icon{
+
+
+  }
+
+  &--primary{
+    background-color : $button-primary-color;
+    color            : $button-text-color;
+    box-shadow       : 0 6px 8px -2px rgba(66, 99, 235, 0.2);
+
+    &:hover{
+      background-color : $button-primary-color-hover;
+      color            : $button-text-color;
+    }
+
+    &:active{
+      background-color : $button-primary-color-active;
+    }
+  }
+
+  &--whatsapp{
+    background-color : #25D366;
+
+    .icon-whatsapp{
+      margin-right : 10px;
+      font-size    : 2em;
+    }
+  }
+
+  &--secondary{
+    color            : $button-primary-color;
+    background-color : #fff;
+    box-shadow       : 0 6px 8px -2px rgba(66, 99, 235, 0.2);
+    border-radius    : 8px;
+    border           : 1px solid #EFEFEF;
+
+    &:hover{
+      border-color : $button-primary-color-hover;
+      color        : $button-primary-color-hover;
+    }
+
+    &:active{
+      border-color : $button-primary-color-active;
+      color        : $button-primary-color-active;
+    }
+  }
+
+  &--transparent{
+    background-color : transparent;
+    color            : $c-secondary-800;
+    font-size        : $fs-primary-big;
+    opacity          : .8;
+
+    &:hover{
+      opacity : 1;
+    }
+  }
+
+  &--third{
+    background-color : $c-secondary-0;
+    color            : $button-primary-color;
+
+    &:hover{
+      color   : $button-primary-color-hover;
+      opacity : .8;
+    }
+
+    &:active{
+      color : $button-primary-color-active;
+    }
+  }
+
+  &--section-color{
+    &:hover{
+      background-color : inherit;
+      opacity          : .8;
+      color            : inherit;
+    }
+  }
+
+  &--outline{
+    border        : 2px solid #fff;
+    border-radius : 8px;
+
+    &:hover{
+      background-color : #fff;
+      color: $c-primary-600;
+    }
+  }
+}

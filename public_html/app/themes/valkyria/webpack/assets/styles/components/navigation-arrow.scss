@@ -1,0 +1,118 @@
+.navigation-arrow{
+  width               : 48px;
+  height              : 48px;
+
+  padding             : 0;
+
+  border-radius       : 50%;
+  border              : none;
+
+  position            : relative;
+
+  display             : flex;
+  justify-content     : center;
+  align-items         : center;
+
+  cursor              : pointer;
+
+  outline             : none;
+
+  transition-duration : .3s;
+  transition-property : color, border-color, background-color;
+
+  &:disabled{
+    pointer-events : none;
+  }
+
+  @include media-breakpoint-up(lg){
+    width  : 56px;
+    height : 56px;
+  }
+
+  &:before{
+    content             : "";
+
+    transition          : $transition-primary;
+
+    background-size     : contain;
+    background-repeat   : no-repeat;
+    background-image    : url(../../ico/arrow-left.svg);
+    background-position : center;
+
+    width               : 40%;
+    height              : 40%;
+  }
+
+  &--next{
+
+    &:before{
+      transform : rotate(180deg);
+    }
+  }
+
+  &--prev{
+    left : 15px;
+  }
+
+
+  &--primary{
+    position         : absolute;
+    top              : 30%;
+    z-index          : 10;
+    border           : none;
+    background-color : #fff;
+    box-shadow       : 0 6px 8px -2px rgba(0, 0, 0, 0.2);
+    color            : #ACB5BD;
+    filter           : grayscale(1);
+
+    &:hover{
+      border-color : $c-primary-400;
+
+      &:before{
+        filter : brightness(1.4);
+      }
+    }
+
+    &:active{
+      border-color : $c-primary-800;
+
+      &:before{
+        filter : brightness(.7);
+      }
+    }
+  }
+
+  &--secondary{
+    background-color : $c-primary-600;
+
+    &:before{
+      background-image : url(../../ico/arrow-left--white.svg);
+      z-index          : 1;
+    }
+
+    &:hover{
+      background-color : $c-primary-400;
+    }
+
+    &:active{
+      background-color : $c-primary-800;
+    }
+  }
+}
+
+.slider__arrow{
+  &-next, &-prev{
+    position : absolute;
+    top      : 30%;
+    margin   : 0 !important;
+  }
+
+  &-next{
+    right : 15px;
+  }
+
+  &.swiper-button-disabled{
+    opacity : 0;
+  }
+}
+

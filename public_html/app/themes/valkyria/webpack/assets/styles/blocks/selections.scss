@@ -1,0 +1,52 @@
+.selections{
+
+
+  &__container{
+    display : grid;
+    gap     : 24px;
+
+    @include media-breakpoint-up(md){
+      grid-template-columns : 1fr 1fr;
+
+      gap                   : 48px;
+    }
+
+    @include media-breakpoint-up(lg){
+      grid-template-columns : 1fr 2fr;
+    }
+
+    @include media-breakpoint-up(xl){
+      grid-template-columns : 1fr 3fr;
+    }
+  }
+
+  &__banner{
+    margin-top : 80px;
+  }
+
+  &__content{
+    display               : grid;
+    grid-template-columns : repeat(auto-fill, minmax(260px, 1fr));
+    gap                   : 48px;
+  }
+
+  &__filters{
+    width         : 100%;
+    margin-bottom : 30px;
+    border-radius : 10px;
+  }
+
+  &__pagination{
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+
+    padding-top     : 32px;
+    padding-bottom  : 32px;
+
+    @include media-breakpoint-up(md){
+      padding-top    : 64px;
+      padding-bottom : 64px;
+    }
+  }
+}

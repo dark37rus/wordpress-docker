@@ -1,0 +1,108 @@
+{
+    "key": "group_606f06c8be1d1",
+    "title": "[:ru]Поля для архивов[:]",
+    "fields": [
+        {
+            "key": "field_606f06d737643",
+            "label": "Фоновая картинка архива",
+            "name": "bg_archive",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "url",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "allow_quickedit": 0,
+            "allow_bulkedit": 0,
+            "library": "all"
+        },
+        {
+            "key": "field_606f2dcc75a5a",
+            "label": "Фоновая картинка элемента",
+            "name": "bg_item",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "wp",
+            "acfe_thumbnail": 0,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "admin_page",
+                "operator": "==",
+                "value": "girls"
+            }
+        ],
+        [
+            {
+                "param": "admin_page",
+                "operator": "==",
+                "value": "programs"
+            }
+        ],
+        [
+            {
+                "param": "admin_page",
+                "operator": "==",
+                "value": "additions"
+            }
+        ],
+        [
+            {
+                "param": "admin_page",
+                "operator": "==",
+                "value": "articles"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1617899027
+}

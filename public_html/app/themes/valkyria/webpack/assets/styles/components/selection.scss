@@ -1,0 +1,52 @@
+.selection {
+
+	&--button {
+		width: 48px;
+		height: 48px;
+		padding: 0;
+
+		background-color: transparent;
+		color: $c-secondary-400;
+		border: 1px solid transparent;
+
+		transition-property: color, background-color, border-color;
+		transition-duration: .3s;
+
+
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+
+
+
+		&:not(&-active) {
+			border-color: $c-secondary-400;
+
+			&:hover {
+				border-color: lighten($c-secondary-400, 10%);
+				color: lighten($c-secondary-400, 10%);
+			}
+		}
+
+		&-active {
+			background-color: $c-primary-600;
+			color: $c-secondary-0;
+
+			//pointer-events: none;
+		}
+
+
+	}
+
+	&--input {
+		height: 40px;
+		font-size: $fs-small;
+		padding: 10px;
+
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+
+}

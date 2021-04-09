@@ -1,0 +1,78 @@
+.seo{
+  background-color : #2C2A4A;
+  position         : relative;
+
+  &:before, &:after{
+    content             : '';
+    display             : block;
+    height              : 100%;
+    width               : 100%;
+    position            : absolute;
+    top                 : 0;
+    background-size     : 100%;
+    background-repeat   : no-repeat;
+    background-position : center top;
+    z-index: 1;
+
+  }
+
+  &:before{
+    background-image    : url('../../images/smoke_edge.png');
+    background-position : center top;
+  }
+
+  &:after{
+    transform           : rotate(180deg);
+    background-image    : url('../../images/smoke_edge.png');
+    background-position : center top;
+  }
+
+  .container{
+    position: relative;
+    z-index: 5;
+  }
+  &__container{
+    position: relative;
+    z-index: 5;
+    display               : grid;
+    gap                   : 18px;
+    grid-template-columns : 1fr;
+
+    margin-bottom         : 24px;
+
+    @include media-breakpoint-up(lg){
+      grid-template-columns : 1fr 2.5fr;
+      margin-bottom         : 48px;
+      gap                   : 48px;
+    }
+    //@include media-breakpoint-up(md) {
+    //	grid-template-columns: 1fr 1fr;
+    //	margin-bottom: 48px;
+    //}
+  }
+
+  &__description{
+    font-family : $font-family-secondary;
+    max-width   : 780px;
+  }
+
+  &__title{
+    margin-top : 12px;
+  }
+
+  &__image{
+    display  : flex;
+    width    : 100%;
+    height   : 379px;
+    overflow : hidden;
+
+    img{
+      width           : 100%;
+      height          : 100%;
+      border-radius   : $bd-rs-primary;
+
+      object-position : center;
+      object-fit      : cover;
+    }
+  }
+}

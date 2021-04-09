@@ -1,0 +1,56 @@
+// Font family
+$font-family-source-sans-pro    : 'Spectral', Helvetica, sans-serif;
+$font-family-secondary          : 'Inter', Helvetica, sans-serif;
+
+
+// Font weights
+$fw-lighter                     : lighter !default;
+$fw-light                       : 300 !default;
+$fw-normal                      : 400 !default;
+$fw-medium                      : 500 !default;
+$fw-bold                        : 700 !default;
+$fw-bolder                      : bolder !default;
+
+
+// Font settings
+$line-height-base               : 1.75 !default;
+$font-family-base               : $font-family-source-sans-pro !default;
+$font-size-base                 : 1rem !default;
+$font-weight-base               : $fw-normal !default;
+
+//Font color
+$fc-title                       : $c-secondary-0 !default;
+$fc-subtitle                    : $c-secondary-0 !default;
+$fc-text                        : $c-secondary-0 !default;
+$fc-small-text                  : $c-secondary-0 !default;
+$fc-label                       : $c-secondary-0 !default;
+$fc-label-small                 : $c-secondary-0 !default;
+
+//Font line height
+$flh-title                      : 1.1 !default;
+
+//Font size
+$fs-big                         : 74px !default;
+$fs-large                       : 64px !default;
+$fs-large-small                 : 56px !default;
+$fs-medium-large                : 42px !default;
+$fs-medium                      : 32px !default;
+$fs-medium-small                : 24px !default;
+$fs-primary-big                 : 18px !default;
+$fs-primary                     : 16px !default;
+$fs-small                       : 14px !default;
+
+
+$fs-title-main                  : $fs-big !default;
+$fs-title-main-medium          	: $fs-large-small  !default;
+$fs-title-main-small            : $fs-medium-large !default;
+
+$fs-title-primary               : $fs-big !default;
+$fs-title-primary-mobile        : $fs-medium-large !default;
+
+$fs-title-secondary             : $fs-large !default;
+$fs-title-secondary-mobile      : $fs-medium !default;
+
+$fs-title-small                 : $fs-medium !default;
+
+$fs-text-primary                : $fs-primary !default;

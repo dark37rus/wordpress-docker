@@ -1,0 +1,90 @@
+.title{
+  margin      : 0;
+  padding     : 0;
+  line-height : $flh-title;
+}
+
+.title--primary{
+  font-weight : $fw-bold;
+  font-size   : $fs-title-secondary-mobile;
+  line-height : $flh-title;
+
+  color       : $fc-title;
+
+  @include media-breakpoint-up(sm){
+    font-size : $fs-title-secondary;
+  }
+}
+
+.title--secondary{
+  font-weight : $fw-bold;
+  font-size   : $fs-title-main-small;
+  line-height : $flh-title;
+
+  color       : $fc-title;
+
+  @include media-breakpoint-up(md){
+    font-size : $fs-title-main-medium;
+  }
+
+  @include media-breakpoint-up(lg){
+    font-size : $fs-title-main;
+  }
+}
+
+.title--third{
+  font-weight : $fw-bold;
+  font-size   : $fs-medium-small;
+  line-height : $flh-title;
+
+  color       : $fc-title;
+
+  @include media-breakpoint-up(sm){
+    font-size : $fs-medium;
+  }
+}
+
+.title--main{
+  font-size      : 4em;
+  font-weight    : $fw-bold;
+  text-transform : uppercase;
+
+  @include media-breakpoint-up(md){
+    font-size : $fs-title-main-medium;
+  }
+
+  @include media-breakpoint-up(lg){
+    font-size : $fs-title-main;
+  }
+}
+
+.title--category{
+  padding-bottom : 12px;
+
+  @include media-breakpoint-up(md){
+    padding-bottom : 28px;
+  }
+
+  &:not(:first-child){
+    padding-top : 12px;
+
+    @include media-breakpoint-up(md){
+      padding-top : 28px;
+    }
+  }
+
+}
+
+.title--small{
+  font-weight : bold;
+  font-size   : 20px;
+}
+
+.title--medium{
+  font-weight : $fw-bold;
+  font-size   : $fs-large-small;
+}
+
+.title--accent{
+  color : $c-primary-600;
+}

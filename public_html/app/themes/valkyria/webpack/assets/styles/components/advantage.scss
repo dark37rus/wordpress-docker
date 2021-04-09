@@ -1,0 +1,39 @@
+.advantage{
+  width          : 100%;
+  height         : 100%;
+
+  font-family    : $font-family-secondary;
+
+  display        : flex;
+  flex-direction : column;
+
+  &__image{
+    width         : 100%;
+    border-radius : 50%;
+
+    margin-bottom : 10px;
+
+    @include media-breakpoint-up(md){
+      margin-bottom : 24px;
+    }
+
+    img{
+      width         : 130px;
+      height        : 130px;
+      border-radius : 50%;
+      margin        : auto;
+
+      @include media-breakpoint-up(md){
+        width  : 100%;
+        height : 100%;
+      }
+
+      object-fit    : cover;
+    }
+  }
+
+  &__text{
+    color      : $fc-text;
+    text-align : center;
+  }
+}
